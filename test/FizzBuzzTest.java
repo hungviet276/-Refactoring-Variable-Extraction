@@ -1,10 +1,11 @@
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 class FizzBuzzTest {
 
     @Test
+    @DisplayName("Test 3 Hung")
     void testFizz3() {
         int number = 3;
         String expected = "Fizz";

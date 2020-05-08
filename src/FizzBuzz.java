@@ -1,12 +1,15 @@
 public class FizzBuzz {
     public static String fizzBuzz(int number){
-        if(number % 3 == 0 && number % 5 == 0)
+
+        boolean isDivisibleBy3 = number % 3 == 0;
+        boolean isDividibleBy5 = number % 5 == 0;
+        if(isDivisibleBy3 && isDividibleBy5)
             return "FizzBuzz";
 
-        if(number % 3 == 0)
+        if(isDivisibleBy3)
             return "Fizz";
 
-        if(number % 5 == 0)
+        if(isDividibleBy5)
             return "Buzz";
 
         return number + "";
